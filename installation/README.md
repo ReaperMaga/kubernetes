@@ -43,7 +43,7 @@ That should be everything for microk8s and your kubernetes should be running.
 
 We will create a Secret to store our Cloudflare credentials.
 
-Download this <a href="/files/cloudflare-secret.yaml">file</a>
+Download this <a href="/installation/files/cloudflare-secret.yaml">file</a>
 and replace the placeholders with your credentials.
 
 After replacing apply this file to your kubernetes cluster with:
@@ -62,7 +62,7 @@ microk8s helm3 repo add traefik https://helm.traefik.io/traefik
 microk8s helm3 repo update
 ```
 
-Download this <a href="/files/traefik-helm-values.yaml">file</a>
+Download this <a href="/installation/files/traefik-helm-values.yaml">file</a>
 and replace all placeholders.
 
 Switch your context namespace to traefik:
@@ -83,7 +83,7 @@ microk8s kubectl get all --namespace=traefik
 
 ## Step 3: Let kubernetes dashboard run behind traefik
 
-It's actually simple just download this <a href="/files/k8s-dashboard-ingress.yaml">file</a> and replace `<domain>` with your choosen domain name.
+It's actually simple just download this <a href="/installation/files/k8s-dashboard-ingress.yaml">file</a> and replace `<domain>` with your choosen domain name.
 
 After replacing apply it your kubernetes cluster with:
 ```

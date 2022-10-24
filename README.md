@@ -1,7 +1,7 @@
 # Kubernetes files
 
 ## Table of Contents
-- <a href="/installation">Installation</a>
+- <a href="/installation">Installation with Traefik</a>
 - <a href="/installation">Files</a>
 
 
