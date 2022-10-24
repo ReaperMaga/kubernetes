@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - <a href="/installation">Installation with Traefik</a>
-- <a href="/installation">Files</a>
+- <a href="/files">Files</a>
 
 
 ## Author
