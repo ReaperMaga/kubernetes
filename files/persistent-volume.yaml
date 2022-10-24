@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: <volume-name>
+spec:
+  capacity:
+   storage: <amount>Gi
+  accessModes:
+   - ReadWriteOnce
+  hostPath:
+    path: "/path/to/volume"
+  storageClassName: ""

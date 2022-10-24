@@ -90,6 +90,11 @@ After replacing apply it your kubernetes cluster with:
 microk8s kubectl apply -f k8s-dashboard-ingress.yaml
 ```
 
+Create bearer token for dashboard access:
+```
+microk8s kubectl create token default --duration=0s
+```
+
 
 
 
