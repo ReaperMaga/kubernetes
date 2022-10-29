@@ -95,6 +95,12 @@ Create bearer token for dashboard access:
 microk8s kubectl create token default --duration=0s
 ```
 
+or use the config file at this location:
+
+```
+/var/snap/microk8s/current/credentials/kubelet.config
+```
+
 ## Step 4: Let kubernetes API server run behind traefik
 
 Download this <a href="/installation/files/k8s-api-ingress.yaml">file</a>
