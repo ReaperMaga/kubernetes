@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+    name: kubernetes-api
+    namespace: <kube-api-namespace>
+spec:
+    ingressClassName: traefik
+    rules:
+    - host: "k8s-api.<domain>"
+      http:
+        paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: kubernetes
+              port:
+                number: 443
